@@ -3,3 +3,8 @@ Twilio API library written in CoffeeScript
 Supports verbs and requests. Ported from the Java library.
 
 There currently aren't any convenience functions for requests (makeCall, sendSMS, etc) and the code is tied to RingoJS. Those will be rectified very soon.
+
+To use in RingoJS:
+
+- Copy contents of gen-js directory to <RingoJS dir>/modules/twilio.
+- You'll now be able to instantiate things from the commandline or from within scripts.
