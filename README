@@ -1,0 +1,5 @@
+Twilio API library written in CoffeeScript
+
+Supports verbs and requests. Ported from the Java library.
+
+There currently aren't any convenience functions for requests (makeCall, sendSMS, etc) and the code is tied to RingoJS. Those will be rectified very soon.
