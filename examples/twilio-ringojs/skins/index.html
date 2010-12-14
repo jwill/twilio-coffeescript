@@ -1,0 +1,27 @@
+<% extends ./base.html %>
+
+<% subskin content %>
+<script>
+  function compile() {
+    var textToCompile = document.getElementById("cscode").text;
+console.log(textToCompile);
+    alert(textToCompile);
+  }
+</script>
+<div id="header"><h1><% title %></h1></div>
+<div id="body">
+  <form name="callRequest" action="makeCall" method="POST">
+    <span>Enter your phone number:</span>
+    <input type="text" name="phone" columns="10"/>
+    <input type="submit" name="Make Call"/>
+  </form>
+  <br/><br/>
+  <!--div>
+    <span>Compose TwiML with CoffeeScript</span>
+    <form name="twimlRequest" action="makeTwiML" method="POST">
+      <textarea rows="5" columns="40" name="code"></textarea>
+      <br/>
+      <input type="submit" name="Create TwiML">
+    </form>
+  </div-->
+</div>
